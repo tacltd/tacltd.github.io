@@ -2,7 +2,7 @@
 
 
     <!––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––- 
-                    With love, The A005 Conglomerate
+                    With love, The A005 Conglomerate.
     ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––-->
 
 
@@ -81,186 +81,11 @@ and many more others to come. These companies were all founded by Thomas Jojo Jo
     <link rel='shortcut icon' type='image/png' href="https://64.media.tumblr.com/c7634c64473ce17804ef9dfbe1c5795a/d4dfee82fbc2ddbe-d5/s2048x3072/d8b0c83531b4a59e609c3981125fb44b55e5286b.jpg" />
     
     
-    <!-- EXTERNAL STYLESHEETS -->
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="https://acolorblue.co/libraries/Code/CSS/global.css?49"/>
-    
     <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/jojosweb/libraries/main/Fonts/Avenir%20Light/stylesheet.css"/>
-    
     <link rel="stylesheet" type="text/css" href="https://jojosweb.github.io/libraries/Code/CSS/icons.css?3"/>
-    
-    
-    <!-- LOCAL STYLESHEET -->
-    <!-- REGULAR STYLESHEET -->
-    <style type="text/css">
-html {
-  width: 100%;
-  height: 100%;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-  display: none;
-}
-
-body {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  width: 100%;
-  height: 100%;
-}
-
-body > iframe.tmblr-iframe {
-   display: none!important;
-}
-
-
-/* HEADER */
-body > .header {
-  width: 100%;
-  height: 40px;
-  box-shadow: 0px 1px 7px #efefef;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  font-family: Arial;
-  z-index: 3;
-/*   overflow: hidden; */
-}
-
-
-
-/* HEADER - SECTION CONTAINER*/
-body > .header .section-container {
-  width: 100%;
-  height: inherit;
-  margin: auto;
-  z-index: 1;
-}
-
-
-
-/* HEADER -SECTION CONTAINER - a */
-body > .header .section-container a {
-  height: inherit;
-  color: black;
-  overflow: hidden;
-  margin: auto;
-  padding: 0px;
-  font-family: Arial;
-  cursor: pointer;
-}
-
-/* HEADER -SECTION CONTAINER - a - WIDTH LONGER*/
-.width-longer body > .header .section-container a {
-  width: 100%;
-  height: inherit;
-  font-size: 15px;
-  font-weight: 600;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: flex;
-}
-
-/* HEADER - a - HEIGHT LONGER*/
-.height-longer body > .header .section-container a {
-  width: 40px;
-}
-
-
-
-/* a CONTENT ::BEFORE */
-body > .header .section-container a.icon::before {
-  position: relative;
-}
-
-/* a CONTENT ::BEFORE - WIDTH LONGER */
-.width-longer body > .header .section-container a.icon::before {
-  width: fit-content;
-  height: fit-content;
-  background-image: none;
-}
-
-.width-longer body > .header .section-container a.home.icon::before {
-  content: "Home";
-}
-
-.width-longer body > .header .section-container a.info.icon::before {
-  content: "About";
-}
-
-.width-longer body > .header .section-container a.yc.icon::before {
-  content: "YC S22";
-}
-
-.width-longer body > .header .section-container a.invest.icon::before {
-  content: "Invest";
-}
-
-.width-longer body > .header .section-container a.contact.icon::before {
-  content: "Contact";
-}
-
-/* a CONTENT ::BEFORE - HEIGHT LONGER */
-.height-longer body > .header .section-container a.icon::before {
-  width: inherit;
-  height: inherit;
-  background-size: 70%;
-}
-
-.height-longer body > .header .section-container a.icon.contact::before {
-  background-size: 75%;
-}
-
-
-/* SECTION CONTAINER - MENU */
-body > .header .section-container .menu {
-  width: 200px;
-  height: 50px;
-  background: white;
-  position: absolute;
-  right: 0px;
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 0px 5px 7px #efefef;
-  display: flex;
-}
-
-body > .header .section-container.contact .menu {
-  opacity: 0;
-}
-
-body > .header .section-container.contact .menu.show {
-  opacity: 1;
-}
-
-body > .header .section-container .menu span {
-  width: fit-content;
-  height: fit-content;
-  background: white;
-  position: relative;
-  margin: auto;
-}
-
-
-
-/* BACKGROUND LOGO */
-img.logo {
-  user-select: none;
-}
-
-.width-longer img.logo {
-  width: auto;
-  height: 100%;
-}
-
-.height-longer img.logo {
-  width: 100%;
-  height: auto;
-}
-        
-    </style>
+    <link rel="stylesheet" type="text/css" href="local.css"/>
   </head>
     
     
@@ -296,34 +121,6 @@ img.logo {
         <!-- SCRIPTS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
         <script src="https://acolorblue.co/libraries/Code/Javascript/global.js?242"></script>
-        
-        <script>
-            // TOGGLE MENU
-function toggleMenu() {
-  var home = $('.home.section-container '),
-      about = $('.about.section-container '),
-      yc = $('.yc.section-container '),
-      invest = $('.invest.section-container '),
-      contact = $('.contact.section-container a.contact');
-  $('.contact.section-container a.contact').on('click', function() {
-    $('.contact.section-container .menu').toggleClass('show');
-  })
-  
-  
-  $('div.content').on('click', function() {
-    if ($('.contact.section-container .menu').hasClass('show')) {
-      $('.contact.section-container .menu').removeClass('show');
-    }
-  })
-}
-
-
-
-
-// WINDOW ON LOAD
-window.onload = function() {
-  toggleMenu();
-}
-        </script>
+        <script src="local.js"></script>
     </body>
 </html>
