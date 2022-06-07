@@ -47,6 +47,10 @@ body > .header .section-container {
   z-index: 1;
 }
 
+body > .header .section-container.selected {
+  border-bottom: 1px solid #000;
+}
+
 
 
 /* HEADER -SECTION CONTAINER - a */
