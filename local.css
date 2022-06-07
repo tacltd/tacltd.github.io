@@ -27,6 +27,7 @@ body > iframe.tmblr-iframe {
 body > .header {
   width: 100%;
   height: 40px;
+  background: #fff;
   box-shadow: 0px 1px 7px #efefef;
   position: absolute;
   display: flex;
