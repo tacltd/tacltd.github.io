@@ -7,6 +7,7 @@ function toggleMenu() {
       contact = $('.contact.section-container a.contact');
   $('.contact.section-container a.contact').on('click', function() {
     $('.contact.section-container .menu').toggleClass('show');
+    $('.contact.section-container').toggleClass('selected');
   })
   
   
