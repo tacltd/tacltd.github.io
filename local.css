@@ -34,7 +34,6 @@ body > .header {
   flex-direction: row;
   font-family: Arial;
   z-index: 3;
-/*   overflow: hidden; */
 }
 
 
@@ -47,37 +46,22 @@ body > .header .section-container {
   z-index: 1;
 }
 
-body > .header .section-container.selected {
-/*   border-bottom: 1px solid #000; */
-}
-
 
 
 /* HEADER -SECTION CONTAINER - a */
 body > .header .section-container a {
+  width: 40px;
   height: inherit;
   color: black;
   overflow: hidden;
   margin: auto;
   padding: 0px;
-  font-family: Arial;
   cursor: pointer;
-}
-
-/* HEADER -SECTION CONTAINER - a - WIDTH LONGER*/
-.width-longer body > .header .section-container a {
-  width: 40px;
-  height: inherit;
   font-size: 15px;
   font-weight: 600;
   text-overflow: ellipsis;
   white-space: nowrap;
   display: flex;
-}
-
-/* HEADER - a - HEIGHT LONGER*/
-body > .header .section-container a {
-  width: 40px;
 }
 
 body > .header .section-container.selected a {
@@ -89,32 +73,6 @@ body > .header .section-container a.icon::before {
   position: relative;
 }
 
-/* a CONTENT ::BEFORE - WIDTH LONGER */
-/* .width-longer body > .header .section-container a.icon::before {
-  width: fit-content;
-  height: fit-content;
-  background-image: none;
-}
-
-.width-longer body > .header .section-container a.home.icon::before {
-  content: "Home";
-}
-
-.width-longer body > .header .section-container a.info.icon::before {
-  content: "About";
-}
-
-.width-longer body > .header .section-container a.yc.icon::before {
-  content: "YC S22";
-}
-
-.width-longer body > .header .section-container a.invest.icon::before {
-  content: "Invest";
-}
-
-.width-longer body > .header .section-container a.contact.icon::before {
-  content: "Contact";
-} */
 
 /* a CONTENT ::BEFORE - HEIGHT LONGER */
 body > .header .section-container a.icon::before {
