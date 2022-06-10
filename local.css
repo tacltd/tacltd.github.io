@@ -76,7 +76,7 @@ body > .header .section-container a {
 }
 
 /* HEADER - a - HEIGHT LONGER*/
-.height-longer body > .header .section-container a {
+body > .header .section-container a {
   width: 40px;
 }
 
