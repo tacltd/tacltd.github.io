@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: url('../Nasalization/Nasalization.eot');
+    src: url('../Nasalization/Nasalization.eot?#iefix') format('embedded-opentype'),
+    	 url('../Nasalization/Nasalization.woff2') format('woff2'),
+         url('../Nasalization/Nasalization.woff') format('woff'),
+         url('../Nasalization/Nasalization.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
