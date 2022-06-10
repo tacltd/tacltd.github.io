@@ -88,7 +88,7 @@ body > .header .section-container a.icon::before {
 }
 
 /* a CONTENT ::BEFORE - WIDTH LONGER */
-.width-longer body > .header .section-container a.icon::before {
+/* .width-longer body > .header .section-container a.icon::before {
   width: fit-content;
   height: fit-content;
   background-image: none;
@@ -112,16 +112,16 @@ body > .header .section-container a.icon::before {
 
 .width-longer body > .header .section-container a.contact.icon::before {
   content: "Contact";
-}
+} */
 
 /* a CONTENT ::BEFORE - HEIGHT LONGER */
-.height-longer body > .header .section-container a.icon::before {
+body > .header .section-container a.icon::before {
   width: inherit;
   height: inherit;
   background-size: 70%;
 }
 
-.height-longer body > .header .section-container a.icon.contact::before {
+body > .header .section-container a.icon.contact::before {
   background-size: 75%;
 }
 
