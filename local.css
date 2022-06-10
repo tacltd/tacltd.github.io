@@ -1,31 +1,11 @@
-html {
-  width: 100%;
-  height: 100%;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-  display: none;
-}
-
 body {
-  position: absolute;
-  margin: 0;
-  padding: 0;
   background: #fff;
-  width: 100%;
-  height: 100%;
-}
-
-body > iframe.tmblr-iframe {
-   display: none!important;
 }
 
 
 /* HEADER */
 body > .header {
-  width: 100%;
+  width: inherit;
   height: 40px;
   background: #fff;
   box-shadow: 0px 1px 7px #efefef;
@@ -37,7 +17,6 @@ body > .header {
 }
 
 
-
 /* HEADER - SECTION CONTAINER*/
 body > .header .section-container {
   width: 100%;
@@ -47,13 +26,11 @@ body > .header .section-container {
 }
 
 
-
 /* HEADER -SECTION CONTAINER - a */
 body > .header .section-container a {
   width: 40px;
   height: inherit;
   color: black;
-  overflow: hidden;
   margin: auto;
   padding: 0px;
   cursor: pointer;
@@ -62,6 +39,7 @@ body > .header .section-container a {
   text-overflow: ellipsis;
   white-space: nowrap;
   display: flex;
+  overflow: hidden;
 }
 
 body > .header .section-container.selected a {
