@@ -48,7 +48,7 @@ body > .header .section-container {
 }
 
 body > .header .section-container.selected {
-  border-bottom: 1px solid #000;
+/*   border-bottom: 1px solid #000; */
 }
 
 
@@ -66,7 +66,6 @@ body > .header .section-container a {
 
 /* HEADER -SECTION CONTAINER - a - WIDTH LONGER*/
 .width-longer body > .header .section-container a {
-  width: 100%;
   width: 40px;
   height: inherit;
   font-size: 15px;
@@ -81,7 +80,9 @@ body > .header .section-container a {
   width: 40px;
 }
 
-
+body > .header .section-container.selected a {
+  border-bottom: 1px solid #000;
+}
 
 /* a CONTENT ::BEFORE */
 body > .header .section-container a.icon::before {
