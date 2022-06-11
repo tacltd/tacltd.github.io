@@ -23,5 +23,10 @@ function toggleMenu() {
 
 // WINDOW ON LOAD
 window.onload = function() {
+  monotoneBreather('.loader', 2000);
+  removeLoader('.loader', 'no-opacity', 9000, 9400);
+  setTimeout(function() {
+    automatedText('.company-branding p', 1000, [''], 1000, '-break-', 800);
+  }, 9400);
   toggleMenu();
 }
