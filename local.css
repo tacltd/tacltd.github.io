@@ -30,10 +30,10 @@ body > .header .section-container {
 body > .header .section-container a {
   width: 40px;
   height: inherit;
-  color: black;
   margin: auto;
   padding: 0px;
   cursor: pointer;
+  color: black;
   font-size: 15px;
   font-weight: 600;
   text-overflow: ellipsis;
@@ -48,15 +48,10 @@ body > .header .section-container.selected a {
 
 /* a CONTENT ::BEFORE */
 body > .header .section-container a.icon::before {
-  position: relative;
-}
-
-
-/* a CONTENT ::BEFORE - HEIGHT LONGER */
-body > .header .section-container a.icon::before {
   width: inherit;
   height: inherit;
   background-size: 70%;
+  position: relative;
 }
 
 body > .header .section-container a.icon.contact::before {
@@ -94,17 +89,45 @@ body > .header .section-container .menu span {
 
 
 
-/* BACKGROUND LOGO */
-img.logo {
+body > .content {
+  width: 100%;
+  height: -webkit-fill-available;
+  position: absolute;
+}
+
+.content .company-branding {
+  width: fit-content;
+  height: fit-content;
+}
+
+.content .company-branding p {
+  margin: 0px;
+  text-align: center;
   user-select: none;
 }
 
-.width-longer img.logo {
-  width: auto;
-  height: 100%;
+.content .company-branding .name {
+  font-family: Nasalization;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-.height-longer img.logo {
-  width: 100%;
-  height: auto;
+.content .company-branding .bio {
+  font-family: Arial;
+}
+
+.width-longer body > .content .company-branding .name {
+  font-size: 48px;
+}
+
+.width-longer body > .content .company-branding .bio {
+  font-size: 19px;
+}
+
+.height-longer body > .content .company-branding .name {
+  font-size: 26px;
+}
+
+.height-longer body > .content .company-branding .bio {
+  font-size: 12px;
 }
