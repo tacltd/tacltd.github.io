@@ -94,7 +94,7 @@ body > .header .section-container .menu span {
 
 
 
-body > .content {
+body > .content.home {
   width: 100%;
   height: -webkit-fill-available;
   position: absolute;
