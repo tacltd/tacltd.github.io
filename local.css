@@ -1,5 +1,6 @@
 body {
-  background: #fff;}
+  background: #fff;
+}
 
 
 /* HEADER */
@@ -97,6 +98,10 @@ body > .content.home {
 .content .company-branding {
   width: fit-content;
   height: fit-content;
+}
+
+.height-longer body > .content .company-branding {
+  width: 100%;
 }
 
 .content .company-branding p {
