@@ -125,9 +125,11 @@ body > .content.home {
 
 .height-longer body > .content .company-branding .name {
   font-size: 26px;
+  font-size: 2.1rem;
 }
 
 .height-longer body > .content .company-branding .bio {
   font-size: 12px;
   font-size: 6.8px;
+  font-size: 0.8rem;
 }
